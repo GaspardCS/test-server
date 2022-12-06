@@ -1,0 +1,46 @@
+.couleur{
+  background-color: #1E2022; 
+  min-height:100%;
+  font-family: 'Poppins', sans-serif;
+}
+body {  
+margin:0;
+padding:0;
+overflow:hidden;
+}
+.Motcrypte{
+  font-size: 30px;
+  margin-left: -10%;
+}
+.container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+.item
+{
+  background-color:  #1E2022;
+  border-radius: 25px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 45%; 
+  display: table;
+}
+
+.button {
+  background-color: #52616a;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  font-size: 70px;
+  cursor: pointer;
+}

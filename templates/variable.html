@@ -1,0 +1,33 @@
+{{define "variable"}}{{if eq .Fin 1}}
+<div class="defaite">
+    Défaite
+    </div>
+<div class="texte">
+Le mot était : {{.Mot}}
+</div>
+<div class="btnreset">
+    <a href="http://localhost:8000/reset"class="bouton">Cliquer pour recommencer</a> 
+</div>
+{{end}}
+{{if eq .Fin 2}}
+<div class="victoire">
+    Félicitation
+    </div>
+<div class="texte">
+    tu as fais {{.Faute}} faute(s)
+    </div>
+    <div class="btnreset">
+        <a href="http://localhost:8000/reset"class="bouton">Cliquer pour recommencer</a> 
+    </div>
+{{end}} {{if eq .Fin 0}}
+<div class="mot">
+<div class="information">
+<div class="Motcrypte">
+    {{.Motcrypte}}
+</div>
+<div class="Faute">
+    Tu as fais {{.Faute}} faute(s)
+</div>
+</div>
+</div>
+{{end}} {{end}}
